@@ -46,7 +46,7 @@ const HeaderLange = () => {
             </Link>
           </div>
           {/* End Logo */}
-          <div class="d-flex flex-column align-items-end gap-2">
+          <div className="d-flex flex-column align-items-end gap-2">
             <div className="header-kontakt d-flex gap-4">
               <div className="d-flex gap-2">
                 <img

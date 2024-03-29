@@ -219,6 +219,29 @@ body .theme-btn-five:before {
 
 .hero-banner-four h1 span:before {
   background: var(--lange-orange-soft);
+  width: 0;
+}
+
+.hero-banner-four h1 span:before {
+  animation: grow 2s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.hero-banner-four h1:nth-child(2) span:before {
+  animation-delay: 400ms;
+}
+.hero-banner-four h1:nth-child(3) span:before {
+  animation-delay: 600ms;
+}
+
+@keyframes grow {
+  0% {
+    left: -25%;
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .block-style-five {
