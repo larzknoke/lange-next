@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -281,11 +279,13 @@ const MegaMenuMobile = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-
   return (
-    <div className={`mega-menu-wrapper   ${click ? 'active':''}`} style={{position:'fixed',top:'0px',left:'0px'}} >
+    <div
+      className={`mega-menu-wrapper   ${click ? "active" : ""}`}
+      style={{ position: "fixed", top: "0px", left: "0px" }}
+    >
       <div className="mega-swicher"></div>
-      <div  className="mob-header multi-mob-header">
+      <div className="mob-header multi-mob-header">
         <button className="toggler-menu" onClick={handleClick}>
           <div className={click ? "active" : ""}>
             <span></span>
@@ -297,27 +297,41 @@ const MegaMenuMobile = () => {
       {/* End Header */}
 
       <div
-      style={{background:'#17192B',height:'100vh'}}
-
-        className={click ? "mega-mobile-menu menu-open wrapper-two-menu active" : "mega-mobile-menu wrapper-two-menu"}
-
-        
+        style={{ background: "#17192B", height: "100vh" }}
+        className={
+          click
+            ? "mega-mobile-menu menu-open wrapper-two-menu active"
+            : "mega-mobile-menu wrapper-two-menu"
+        }
       >
         <div>
-          <div className="logo position-static" style={{paddingTop:'40px',paddingLeft:'16px'}} >
-            <Link    href="/">
-              <Image   width="137" height="34" src="/images/logo/deski_07.svg" alt="home-demo" />
+          <div
+            className="logo position-static"
+            style={{ paddingTop: "40px", paddingLeft: "16px" }}
+          >
+            <Link href="/">
+              <Image
+                width="137"
+                height="34"
+                src="/images/logo/deski_07.svg"
+                alt="home-demo"
+              />
             </Link>
           </div>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <Image  width="14" height="15"  src="/images/icon/close-w.svg" alt="icon" />
+            <Image
+              width="14"
+              height="15"
+              src="/images/icon/close-w.svg"
+              alt="icon"
+            />
           </div>
           {/* Mobile Menu close icon */}
 
           {/* End logo */}
         </div>
-        <div style={{background:'#17192B',}} >
-          <MobileMenuTwo/>
+        <div style={{ background: "#17192B" }}>
+          <MobileMenuTwo />
         </div>
       </div>
     </div>

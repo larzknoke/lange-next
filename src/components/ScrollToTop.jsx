@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -11,11 +9,10 @@ export default function ScrollToTop() {
   const scrollToTop = () => {
     if (typeof window !== "undefined") {
       window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+        top: 0,
+        behavior: "smooth",
+      });
     }
-    
   };
 
   useEffect(() => {
@@ -38,7 +35,12 @@ export default function ScrollToTop() {
       {isVisible && (
         <div>
           <button className="scroll-top " onClick={scrollToTop}>
-            <Image width={17} height={17} src="/images/icon/chevron-w.png" alt="icon" />
+            <Image
+              width={17}
+              height={17}
+              src="/images/icon/chevron-w.png"
+              alt="icon"
+            />
           </button>
         </div>
       )}

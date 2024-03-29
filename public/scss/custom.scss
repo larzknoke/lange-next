@@ -1,4 +1,14 @@
 // color: var(--blue-dark);
+:root {
+  --lange-orange: #f39200;
+  --lange-orange-soft: #f9c069;
+  --lange-orange-light: #ffe9c6;
+  // --lange-orange-light: #fff8ed;
+  --lange-blue: #0075bf;
+  --lange-blue-light: #8ab5e1;
+  --lange-blue-light2: #abc3dc;
+  scroll-behavior: smooth;
+}
 
 .hoverPurple {
   &:hover {
@@ -205,8 +215,13 @@ body .theme-btn-five:before {
   text-decoration: underline;
 }
 
+.hero-banner-four h1 span:before {
+  background: var(--lange-orange-soft);
+}
+
 .block-style-five {
   margin-top: 0;
+  background: #fff3e1;
 }
 
 .block-style-five p {
@@ -371,4 +386,33 @@ body .theme-btn-five:before {
 }
 .scroll-top:hover {
   background: var(--lange-blue-light);
+}
+
+// ##################
+// HEADER HOLDER
+// ##################
+
+.header-holder {
+  position: relative;
+
+  & img {
+    position: absolute;
+    max-height: 550px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    z-index: 30;
+    border: 5px solid var(--lange-orange-light);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  & img:nth-child(2) {
+    margin-top: 10%;
+    margin-left: 35%;
+    z-index: 20;
+  }
+  & img:nth-child(3) {
+    margin-top: 20%;
+    margin-left: 75%;
+    z-index: 10;
+  }
 }

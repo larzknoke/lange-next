@@ -404,9 +404,9 @@ export default function Home() {
             <Image
               width={780}
               height={330}
-              src="/images/lange/team/team3.png"
+              src="/images/lange/webp/team.webp"
               alt="Team"
-              className="m-auto my-5"
+              className="m-auto my-5 rounded"
             />
           </div>
 

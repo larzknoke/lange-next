@@ -5,19 +5,19 @@ const FeatureContent = [
     icon: "rolle",
     meta: "Fassadengestaltung",
     subTitle: `Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie dabei, der Witterung zu trotzen.`,
-    picture: "AnstrichFeature",
+    picture: "fassade2",
   },
   {
     icon: "waerme",
     meta: "Wärmedämmtechniken",
     subTitle: `Darüber hinaus sorgen modernste Techniken für geringe Heizkosten.`,
-    picture: "DaemmungFeature",
+    picture: "mann_hoch4",
   },
   {
     icon: "gestaltung",
     meta: "farbliche Gestaltung",
     subTitle: `Natürlich übernehmen wir auch gerne die harmonische farbliche Gestaltung Ihrer Innenräume. `,
-    picture: "GestaltungFeature2",
+    picture: "fassade3",
   },
 ];
 
@@ -45,10 +45,11 @@ const FeatureLange = () => {
             <p>{val.subTitle}</p>
             <div className=" mt-3">
               <Image
-                width={500}
+                width={350}
                 height={500}
+                style={{ objectFit: "cover" }}
                 className="rounded-1"
-                src={`/images/lange/${val.picture}.jpg`}
+                src={`/images/lange/webp/${val.picture}.webp`}
                 alt="picture"
               />
             </div>

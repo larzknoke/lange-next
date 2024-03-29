@@ -36,18 +36,38 @@ const HeroBannerLange = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 order-lg-last">
-            <div className="illustration-holder">
+            <div className="header-holder">
               <Image
-                src="/images/lange/Header1.png"
-                alt="shape"
-                className="illustration"
-                width={660}
-                height={471}
+                src="/images/lange/webp/haus.webp"
+                alt="Auto Lange"
+                width={800}
+                height={1200}
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-delay="1500"
+              />
+              <Image
+                src="/images/lange/webp/laden2_hoch.webp"
+                alt="Auto Lange"
+                width={800}
+                height={1200}
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-delay="800"
+              />
+              <Image
+                src="/images/lange/webp/innen.webp"
+                alt="Auto Lange"
+                width={800}
+                height={1200}
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-delay="200"
               />
             </div>
-            <p className="review-text">
+            {/* <p className="review-text">
               Seit mehr als <span>70 Jahren</span> helfen wir Ihnen.
-            </p>
+            </p> */}
           </div>
           {/* End .col */}
 
@@ -97,7 +117,7 @@ const HeroBannerLange = () => {
         </div>
       </div>
 
-      <div className="fancy-feature-eight mt-160 md-mt-100">
+      <div className="fancy-feature-eight mt-250 md-mt-100">
         <div className="container">
           <div className="bg-wrapper">
             <FeatureLange />

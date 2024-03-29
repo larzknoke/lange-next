@@ -67,7 +67,7 @@ const TeamContent = [
     price: "0.65",
     priceMeta: "per user/month",
     packageName: "pc2",
-    skewClass: "skew-right",
+    skewClass: "skew-left",
     priceList: [
       {
         list: "Rechnungswesen",
@@ -80,21 +80,21 @@ const TeamContent = [
     ],
     animatinDelay: "200",
   },
-  {
-    title: "Alexander Rohde",
-    image: "alexander_rohde",
-    price: "0.65",
-    priceMeta: "per user/month",
-    packageName: "pc2",
-    skewClass: "skew-right",
-    priceList: [
-      {
-        list: "Projektleiter",
-        listClass: "",
-      },
-    ],
-    animatinDelay: "200",
-  },
+  // {
+  //   title: "Alexander Rohde",
+  //   image: "alexander_rohde",
+  //   price: "0.65",
+  //   priceMeta: "per user/month",
+  //   packageName: "pc2",
+  //   skewClass: "skew-right",
+  //   priceList: [
+  //     {
+  //       list: "Projektleiter",
+  //       listClass: "",
+  //     },
+  //   ],
+  //   animatinDelay: "200",
+  // },
 ];
 
 const Team = () => {
@@ -102,7 +102,7 @@ const Team = () => {
     <div className="row justify-content-center">
       {TeamContent.map((item, i) => (
         <div
-          className="col-lg-4 col-md-6"
+          className="col-lg-4 offset-lg-1 col-md-6"
           key={i}
           data-aos="fade-up"
           data-aos-duration="1200"

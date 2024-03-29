@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
@@ -42,7 +40,7 @@ const HeaderLange = () => {
               <Image
                 width="450"
                 height="180"
-                src="/images/logo/lange_logo.svg"
+                src="/images/lange/lange_logo.svg"
                 alt="brand"
               />
             </Link>

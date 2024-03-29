@@ -4,18 +4,29 @@ import Image from "next/image";
 const Fachgeschaeft = () => {
   return (
     <div className="row align-items-center" id="laden">
-      <div
-        className="col-lg-6 px-5"
-        data-aos="fade-right"
-        data-aos-duration="1200"
-      >
+      <div className="col-lg-6 px-5">
         <Image
-          width={480}
-          height={768}
+          width={739}
+          height={608}
           style={{ height: "fit-content" }}
-          src="/images/lange/Laden.jpg"
+          src="/images/lange/webp/laden3.webp"
           alt="Fachgeschäft"
           className="m-auto rounded-1"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          data-aos-delay="100"
+        />
+        <Image
+          width={739}
+          height={608}
+          style={{ height: "fit-content" }}
+          src="/images/lange/webp/laden.webp"
+          alt="Fachgeschäft"
+          className="mt-40 rounded-1"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          data-aos-delay="200"
+          data-aos-delay="200"
         />
       </div>
       {/* End .col */}
