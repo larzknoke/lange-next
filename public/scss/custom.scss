@@ -425,3 +425,15 @@ body .theme-btn-five:before {
 .fixed .header-kontakt {
   display: none !important;
 }
+
+.nav-container .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in;
+  top: -20px;
+  left: calc(50% - 60px);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
