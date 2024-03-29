@@ -5,7 +5,7 @@ const FeatureContent = [
     icon: "rolle",
     meta: "Fassadengestaltung",
     subTitle: `Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie dabei, der Witterung zu trotzen.`,
-    picture: "fassade2",
+    picture: "haus1",
   },
   {
     icon: "waerme",

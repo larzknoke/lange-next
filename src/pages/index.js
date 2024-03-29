@@ -297,7 +297,7 @@ export default function Home() {
 				Client Feedback Slider
 		============================================== */}
       <div className="client-feedback-slider-three mb-250 " id="referenzen">
-        <div className="container">
+        <div className="container-fluid">
           <div className="title-style-five text-center mb-80 md-mb-50">
             <div className="row">
               <div className="col-lg-7 col-md-9 m-auto">

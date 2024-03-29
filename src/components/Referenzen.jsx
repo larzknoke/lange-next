@@ -54,8 +54,8 @@ export default function Referenzen() {
           data-aos-delay="100"
         >
           <Image
-            width={800}
-            height={250}
+            width={900}
+            height={300}
             style={{ objectFit: "contain" }}
             src={`/images/lange/referenzen/${val.image}.jpg`}
             alt="Referenzen"
