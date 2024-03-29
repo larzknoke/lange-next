@@ -50,16 +50,16 @@ const HeaderLange = () => {
             <div className="header-kontakt d-flex gap-4">
               <div className="d-flex gap-2">
                 <img
-                  width={15}
-                  src="/images/lange/icons/phone.svg"
+                  width={23}
+                  src="/images/lange/icons/eimer.svg"
                   alt="Phone Icon"
                 />
                 <span>05284 - 94420</span>
               </div>
               <div className="d-flex gap-2">
                 <img
-                  width={15}
-                  src="/images/lange/icons/envelope.svg"
+                  width={25}
+                  src="/images/lange/icons/pinsel3.svg"
                   alt="Email Icon"
                 />
                 <span>
