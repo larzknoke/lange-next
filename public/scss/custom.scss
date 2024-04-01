@@ -1,3 +1,18 @@
+// ::-webkit-scrollbar {
+//   width: 0px;
+// }
+// ::-webkit-scrollbar-track {
+//   background: #fff;
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: var(--blue-dark);
+//   border-radius: 0;
+// }
+// * {
+//   -ms-overflow-style: none;
+//   scrollbar-width: none;
+// }
+
 // color: var(--blue-dark);
 :root {
   --lange-orange: #f39200;
@@ -22,6 +37,13 @@ body {
   }
   background: var(--lange-orange-light2);
 }
+
+@media (max-width: 960px) {
+  body {
+    display: none;
+  }
+}
+
 .slick-dots {
   li {
     button {
@@ -140,23 +162,6 @@ body {
 // CUSTOM LANGE
 // ++++++++++++++++++++
 // ++++++++++++++++++++
-
-// .logo::before {
-//   content: "";
-//   width: 150px;
-//   height: 17px;
-//   background-color: var(--lange-orange);
-//   position: absolute;
-//   top: 0;
-//   left: -100px;
-// }
-
-// .theme-menu-five .logo {
-//   position: absolute;
-//   left: -9%;
-//   top: 10%;
-//   transform: translateY(0);
-// }
 
 .theme-menu-four .logo img {
   max-width: 400px;
@@ -462,4 +467,60 @@ body .theme-btn-five:before {
   border-bottom: 10px solid white;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
+}
+
+.scroller {
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  position: fixed !important;
+  bottom: -15px;
+  left: -150px;
+  z-index: 99;
+  // transform: translateY(-100%);
+
+  & img {
+    height: 50px;
+  }
+
+  & .pan {
+    // animation: pan 2s alternate;
+    // animation-iteration-count: 1;
+  }
+}
+
+.scroller.scrolling .pan {
+  animation: pan 2s alternate;
+  animation-iteration-count: infinite;
+}
+
+.fixed ~ .scroller {
+  opacity: 1;
+  // transform: translateY(0%);
+}
+
+.scroller-middle {
+  width: 100vw;
+  height: 50px;
+  background-image: url(/images/lange/scroller/scroller-hor-middle.svg);
+  background-repeat: repeat-x;
+  // background-size: cover;
+  // background-size: auto;
+  // background-position: 0% 0%;
+}
+
+@keyframes pan {
+  0% {
+    transform: translateX(-15px);
+    rotate: (-2deg);
+  }
+  50% {
+    transform: translateX(-5px);
+    rotate: (2deg);
+  }
+  100% {
+    transform: translateX(-15px);
+    rotate: (4deg);
+  }
 }

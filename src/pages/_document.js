@@ -14,7 +14,6 @@ export default function RootLayout() {
         <div>
           <Main />
         </div>
-        <ScrollToTop />
         <NextScript />
       </body>
     </Html>

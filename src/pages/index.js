@@ -11,6 +11,8 @@ import FooterLange from "@/components/FooterLange";
 import Kontakt from "@/components/Kontakt";
 import Kontakt2 from "@/components/Kontakt2";
 import Image from "next/image";
+import Scroller from "@/components/Scroller";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = {
   title: "Lange Malermeister || Marienmünster",
@@ -21,7 +23,7 @@ export default function Home() {
   return (
     <div className="main-page-wrapper p0">
       <HeaderLange />
-
+      <Scroller />
       <HeroBannerLange />
 
       {/* 
@@ -467,6 +469,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <ScrollToTop />
     </div>
   );
 }
