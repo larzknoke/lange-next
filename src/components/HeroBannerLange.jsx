@@ -3,7 +3,7 @@ import Link from "next/link";
 import FeatureLange from "./FeatureLange";
 import Image from "next/image";
 
-const HeroBannerLange = ({ toggleAnstrich }) => {
+const HeroBannerLange = ({ toggleAnstrich, toggleDamm }) => {
   return (
     <div className="hero-banner-four">
       {/* <Image width="213" height="86"
@@ -126,10 +126,13 @@ const HeroBannerLange = ({ toggleAnstrich }) => {
         </div>
       </div>
 
-      <div className="fancy-feature-eight mt-250 md-mt-100">
+      <div className="fancy-feature-eight mt-250 md-mt-100" id="leistungen">
         <div className="container">
           <div className="bg-wrapper">
-            <FeatureLange toggleAnstrich={toggleAnstrich} />
+            <FeatureLange
+              toggleAnstrich={toggleAnstrich}
+              toggleDamm={toggleDamm}
+            />
           </div>
         </div>
       </div>

@@ -8,11 +8,11 @@ import MenuLinkTwo from "./MenuLinkTwo";
 const Leistungen = [
   {
     name: "Anstrichsysteme",
-    routerPath: "#",
+    routerPath: "#leistungen",
   },
   {
     name: "Dämmtechnik",
-    routerPath: "#",
+    routerPath: "#leistungen",
   },
   {
     name: "Innenraumgestaltung",

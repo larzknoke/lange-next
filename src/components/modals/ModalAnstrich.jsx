@@ -19,7 +19,7 @@ function ModalAnstrich({ anstrichIsOpen, toggleAnstrich }) {
             <Image
               width={78}
               height={78}
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", opacity: 0.7 }}
               src={`/images/lange/icons/rolle_white.svg`}
               alt="icon"
             />
@@ -44,7 +44,7 @@ function ModalAnstrich({ anstrichIsOpen, toggleAnstrich }) {
             objectFit="cover"
             style={{ objectFit: "cover" }}
             className="rounded-1"
-            src={`/images/lange/webp/haus1.webp`}
+            src={`/images/lange/webp/anstrich.webp`}
             alt="picture"
           />
         </div>

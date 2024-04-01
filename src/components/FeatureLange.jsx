@@ -6,12 +6,14 @@ const FeatureContent = [
     meta: "Anstrichsysteme",
     subTitle: `Schönheit und effektiver Schutz – das richtige Anstrichsystem sorgt für den Erhalt von Bausubstanz.`,
     picture: "haus1",
+    modal: "toggleAnstrich",
   },
   {
     icon: "waerme",
     meta: "Wärmedämmtechniken",
     subTitle: `Eine professionell gedämmte Fassade ist die Basis zur Senkung Ihrer Energiekosten.`,
     picture: "mann_hoch4",
+    modal: "toggleDamm",
   },
   {
     icon: "gestaltung",
@@ -21,7 +23,7 @@ const FeatureContent = [
   },
 ];
 
-const FeatureLange = ({ toggleAnstrich }) => {
+const FeatureLange = ({ toggleAnstrich, toggleDamm }) => {
   return (
     <div className="row justify-content-center">
       {/* <div className="d-flex gap-4 flex-column ">
@@ -49,7 +51,7 @@ const FeatureLange = ({ toggleAnstrich }) => {
           key={i}
           data-aos="fade-up"
           data-aos-duration="1200"
-          onClick={toggleAnstrich}
+          onClick={eval(val.modal)}
         >
           <div className="block-style-five">
             <div className="icon">

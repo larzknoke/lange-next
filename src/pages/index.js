@@ -14,6 +14,7 @@ import Image from "next/image";
 import Scroller from "@/components/Scroller";
 import ScrollToTop from "@/components/ScrollToTop";
 import ModalAnstrich from "@/components/modals/ModalAnstrich";
+import ModalDammtechnik from "@/components/modals/ModalDammtechnik";
 
 export const metadata = {
   title: "Lange Malermeister || Marienmünster",
@@ -22,20 +23,28 @@ export const metadata = {
 
 export default function Home() {
   const [anstrichIsOpen, setAnstrichIsOpen] = useState(false);
+  const [dammIsOpen, setDammIsOpen] = useState(false);
 
   function toggleAnstrich() {
     setAnstrichIsOpen(!anstrichIsOpen);
+  }
+  function toggleDamm() {
+    setDammIsOpen(!dammIsOpen);
   }
 
   return (
     <div className="main-page-wrapper p0">
       <HeaderLange toggleAnstrich={toggleAnstrich} />
       <Scroller />
-      <HeroBannerLange toggleAnstrich={toggleAnstrich} />
+      <HeroBannerLange
+        toggleAnstrich={toggleAnstrich}
+        toggleDamm={toggleDamm}
+      />
       <ModalAnstrich
         toggleAnstrich={toggleAnstrich}
         anstrichIsOpen={anstrichIsOpen}
       />
+      <ModalDammtechnik toggleDamm={toggleDamm} dammIsOpen={dammIsOpen} />
 
       {/* 
      =============================================
