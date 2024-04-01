@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import HeaderLange from "@/components/HeaderLange";
@@ -13,6 +13,7 @@ import Kontakt2 from "@/components/Kontakt2";
 import Image from "next/image";
 import Scroller from "@/components/Scroller";
 import ScrollToTop from "@/components/ScrollToTop";
+import ModalAnstrich from "@/components/modals/ModalAnstrich";
 
 export const metadata = {
   title: "Lange Malermeister || Marienmünster",
@@ -20,11 +21,21 @@ export const metadata = {
 };
 
 export default function Home() {
+  const [anstrichIsOpen, setAnstrichIsOpen] = useState(false);
+
+  function toggleAnstrich() {
+    setAnstrichIsOpen(!anstrichIsOpen);
+  }
+
   return (
     <div className="main-page-wrapper p0">
-      <HeaderLange />
+      <HeaderLange toggleAnstrich={toggleAnstrich} />
       <Scroller />
-      <HeroBannerLange />
+      <HeroBannerLange toggleAnstrich={toggleAnstrich} />
+      <ModalAnstrich
+        toggleAnstrich={toggleAnstrich}
+        anstrichIsOpen={anstrichIsOpen}
+      />
 
       {/* 
      =============================================
@@ -86,7 +97,7 @@ export default function Home() {
             Innenraumgestaltung
         ============================================== */}
 
-        <div className="container">
+        <div className="container" id="innenraumgestaltung">
           <div className="title-style-five text-center mb-60 md-mb-30">
             <h6 className="text-light">Wir beraten Sie gerne!</h6>
             <h2>

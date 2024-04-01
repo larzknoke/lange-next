@@ -3,7 +3,7 @@ import Link from "next/link";
 import FeatureLange from "./FeatureLange";
 import Image from "next/image";
 
-const HeroBannerLange = () => {
+const HeroBannerLange = ({ toggleAnstrich }) => {
   return (
     <div className="hero-banner-four">
       {/* <Image width="213" height="86"
@@ -92,15 +92,24 @@ const HeroBannerLange = () => {
               >
                 <span>ausführen</span>
               </h1>
-              <p
-                className="sub-text"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="100"
-              >
-                Regen, Hagel, Schnee, Schmutz – Ihr Haus hat einiges
-                auszuhalten.
-              </p>
+              <div className="sub-text">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="200"
+                >
+                  Regen, Hagel, Schnee, Schmutz – Ihr Haus hat einiges
+                  auszuhalten.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="300"
+                >
+                  Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie
+                  dabei, der Witterung zu trotzen.
+                </p>
+              </div>
               <Link
                 href="#kontakt"
                 className="theme-btn-five"
@@ -120,7 +129,7 @@ const HeroBannerLange = () => {
       <div className="fancy-feature-eight mt-250 md-mt-100">
         <div className="container">
           <div className="bg-wrapper">
-            <FeatureLange />
+            <FeatureLange toggleAnstrich={toggleAnstrich} />
           </div>
         </div>
       </div>

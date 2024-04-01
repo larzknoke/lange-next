@@ -213,7 +213,11 @@ body .theme-btn-five:before {
 }
 
 .hero-banner-four .sub-text {
-  padding-bottom: 25px;
+  font-size: 22px;
+  padding: 50px 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-banner-four .review-text span {
@@ -483,11 +487,6 @@ body .theme-btn-five:before {
   & img {
     height: 50px;
   }
-
-  & .pan {
-    // animation: pan 2s alternate;
-    // animation-iteration-count: 1;
-  }
 }
 
 .scroller.scrolling .pan {
@@ -523,4 +522,63 @@ body .theme-btn-five:before {
     transform: translateX(-15px);
     rotate: (4deg);
   }
+}
+
+// MODAL
+
+.fancy-feature-eight .block-style-five:hover {
+  cursor: pointer;
+}
+
+.react-responsive-modal-root {
+  z-index: 99999 !important;
+}
+
+.react-responsive-modal-closeButton {
+  left: 15px;
+  fill: white;
+}
+
+.lange-modal {
+  background: var(--lange-orange) !important;
+  color: white;
+  padding: 2rem !important;
+  // margin: 2rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+}
+
+.lange-modal-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.lange-modal-content > div {
+  position: relative;
+  width: 50%;
+}
+
+.lange-modal-content .title {
+  font-size: 22px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.lange-modal-content .icon {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.lange-modal-content .title::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: var(--lange-orange-light);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.lange-modal-content p {
+  margin-bottom: 10px;
 }
