@@ -109,7 +109,9 @@ const Team = () => {
           data-aos-delay={item.animatinDelay}
         >
           <div className={`px-5 pr-table-wrapper ${item.skewClass}`}>
-            <div className={`pack-name font-slab ${item.packageName}`}>
+            <div
+              className={`pack-name font-roboto font-bold ${item.packageName}`}
+            >
               <span>{item.title}</span>
             </div>
             <Image

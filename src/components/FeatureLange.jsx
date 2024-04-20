@@ -28,7 +28,7 @@ const FeatureLange = ({ toggleAnstrich, toggleDamm }) => {
     <div className="row justify-content-center">
       {/* <div className="d-flex gap-4 flex-column ">
         <p>
-          Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie dabei,
+          Seit mehr als 100 Jahren helfen wir Ihnen und Ihrer Immobilie dabei,
           der Witterung zu trotzen. Ob Fachwerk oder Ziegel, ob Erstanstrich
           oder Renovierung: Wir sind die Spezialisten für ästhetische
           Fassadengestaltung und effektiven Langzeitschutz.
@@ -63,7 +63,7 @@ const FeatureLange = ({ toggleAnstrich, toggleDamm }) => {
                 alt="icon"
               />
             </div>
-            <div className="title font-slab">{val.meta}</div>
+            <div className="title">{val.meta}</div>
             <p>{val.subTitle}</p>
             <div className=" mt-3">
               <Image

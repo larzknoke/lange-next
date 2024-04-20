@@ -370,6 +370,9 @@ h6 {
 .font-slab {
   font-family: "Roboto Slab", serif !important;
 }
+.font-roboto {
+  font-family: "Roboto", sans-serif !important;
+}
 .font-gordita {
   font-family: "gordita" !important;
 }
@@ -567,7 +570,7 @@ h6 {
   position: absolute;
   background: rgba(241, 193, 83, 0.45);
   left: 0;
-  bottom: 12px;
+  bottom: 7px;
   z-index: -1;
 }
 .title-style-five h6 {
@@ -1168,7 +1171,7 @@ body .shop-btn-two:hover {
   background: var(--blue-dark);
   opacity: 0.16;
   position: absolute;
-  bottom: 12px;
+  bottom: 7px;
   left: 8px;
   z-index: -1;
 }
@@ -7627,7 +7630,7 @@ body .shop-btn-two:hover {
   height: 25px;
   background: rgba(241, 193, 83, 0.4);
   left: 0;
-  bottom: 12px;
+  bottom: 7px;
   z-index: -1;
 }
 .hero-banner-four .sub-text {

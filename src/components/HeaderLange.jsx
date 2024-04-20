@@ -38,8 +38,8 @@ const HeaderLange = () => {
           <div className="logo">
             <Link href="/">
               <Image
-                width="450"
-                height="180"
+                width="480"
+                height="200"
                 src="/images/lange/lange_logo.svg"
                 alt="brand"
               />

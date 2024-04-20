@@ -66,7 +66,7 @@ const HeroBannerLange = ({ toggleAnstrich, toggleDamm }) => {
               />
             </div>
             {/* <p className="review-text">
-              Seit mehr als <span>70 Jahren</span> helfen wir Ihnen.
+              Seit mehr als <span>100</span> helfen wir Ihnen.
             </p> */}
           </div>
           {/* End .col */}
@@ -106,7 +106,7 @@ const HeroBannerLange = ({ toggleAnstrich, toggleDamm }) => {
                   data-aos-duration="1200"
                   data-aos-delay="300"
                 >
-                  Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie
+                  Seit mehr als 100 Jahren helfen wir Ihnen und Ihrer Immobilie
                   dabei, der Witterung zu trotzen.
                 </p>
               </div>

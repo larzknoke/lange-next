@@ -37,15 +37,15 @@ const Fachgeschaeft = () => {
             Über <span>1000+ Produkte</span>
           </div>
           <div className="title-style-five">
-            <h2>
+            <h2 className="font-roboto">
               Unser <span>Fachgeschäft</span>.
             </h2>
           </div>
-          <p className="font-rubik">
+          <p>
             In unserem Fachgeschäft finden Sie alles, was Sie zum Renovieren und
             Gestalten benötigen:
           </p>
-          <p className="font-rubik">
+          <p>
             Besuchen Sie uns und werfen Sie einen Blick in unsere
             Ausstellungsräume.
           </p>

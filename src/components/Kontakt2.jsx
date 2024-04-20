@@ -7,7 +7,7 @@ const Kontakt2 = () => {
   return (
     <>
       <div className="title-style-five text-center" id="kontakt">
-        <h2>
+        <h2 className="font-roboto font-bold">
           <span>Kontakt</span>
         </h2>
       </div>
@@ -24,16 +24,18 @@ const Kontakt2 = () => {
             alt="shape"
             className="line"
           />
-          <p className="mt-4 fs-5 font-slab">
+          <p className="mt-4 fs-5 font-roboto">
             <strong>Jörg Lange GmbH & Co. KG</strong> <br />
             Vor dem Riepenberg 10 <br />
             37696 Marienmünster <br />
           </p>
-          <p className="mt-3 fs-5 font-slab">
+          <p className="mt-3 fs-5 font-roboto">
             Tel. 05284 - 94420 <br />
             Fax 05284 - 94421
           </p>
-          <p className="mt-2 mb-4 fs-5 font-slab">info@lange-malermeister.de</p>
+          <p className="mt-2 mb-4 fs-5 font-roboto">
+            info@lange-malermeister.de
+          </p>
           {/* <p className="mt-4 fs-5 font-slab">
             <strong>Öffnungszeiten</strong> <br />
             Montag - Freitag: 9:00 - 18:00 <br />

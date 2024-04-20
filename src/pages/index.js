@@ -110,7 +110,9 @@ export default function Home() {
           <div className="title-style-five text-center mb-60 md-mb-30">
             <h6 className="text-light">Wir beraten Sie gerne!</h6>
             <h2>
-              <span className="text-light">Innenraumgestaltung</span>
+              <span className="text-light font-roboto">
+                Innenraumgestaltung
+              </span>
             </h2>
           </div>
           {/* End title */}
@@ -121,14 +123,14 @@ export default function Home() {
               data-aos-duration="1200"
             >
               <div className="text-wrapper pr-4 text-light">
-                <p className="font-rubik text-light mb-4">
+                <p className="text-light mb-4">
                   Bewährt oder außergewöhnlich, gemütlich oder exklusiv, wir
                   planen und gestalten Ihre Wohnräume ganz nach Ihren Wünschen.
                   Vom Bodenbelag bis zum Deckenanstrich sorgen harmonische
                   Farben, ungewöhnliche Lasuren oder moderne Techniken für einen
                   bleibenden Eindruck.
                 </p>
-                <h3 className="fs-2 text-light font-slab">
+                <h3 className="fs-2 text-light font-roboto">
                   Wählen Sie zwischen:
                 </h3>
                 <ul className="mt-4 list-meta">
@@ -177,7 +179,7 @@ export default function Home() {
             >
               <div className="title-style-five mb-35">
                 <h6>Bewirb dich jetzt!</h6>
-                <h2>
+                <h2 className="font-roboto">
                   <span>Wir suchen einen Maler</span> (m/w/d)
                 </h2>
               </div>
@@ -202,7 +204,7 @@ export default function Home() {
                 schriftlich bei uns bewerben oder direkt ein persönliches
                 Gespräch mit uns vereinbaren.
               </p>
-              <div className="name font-slab my-4 fs-4">
+              <div className="name font-roboto my-4 fs-4 font-bold">
                 Wir freuen uns auf Dich!
               </div>
               <Link
@@ -300,7 +302,7 @@ export default function Home() {
             <h6>das sind wir</h6>
             <div className="row">
               <div className="col-lg-9 m-auto">
-                <h2>Unser Team</h2>
+                <h2 className="font-roboto">Unser Team</h2>
               </div>
             </div>
           </div>
@@ -323,7 +325,11 @@ export default function Home() {
           <div className="title-style-five text-center mb-80 md-mb-50">
             <div className="row">
               <div className="col-lg-7 col-md-9 m-auto">
-                <h2 data-aos="fade-up" data-aos-duration="1200">
+                <h2
+                  className="font-roboto font-bold"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
                   Unsere <span>Referenzen.</span>
                 </h2>
                 <p
@@ -420,7 +426,7 @@ export default function Home() {
         <div className="container">
           <div className="title-style-five text-center mb-80 md-mb-60">
             <h6>Lange Familienbetrieb seit 1932</h6>
-            <h2 className="text-white">
+            <h2 className="text-white font-roboto font-bold">
               <span>Unsere Geschichte</span>
             </h2>
             <Image
@@ -435,7 +441,7 @@ export default function Home() {
           <div className="row">
             <div className="col-xl-9 col-lg-10 m-auto text-start">
               <p className="mb-3">
-                Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie
+                Seit mehr als 100 Jahren helfen wir Ihnen und Ihrer Immobilie
                 dabei, der Witterung zu trotzen. Ob Fachwerk oder Ziegel, ob
                 Erstanstrich oder Renovierung: Wir sind die Spezialisten für
                 ästhetische Fassadengestaltung und effektiven Langzeitschutz.

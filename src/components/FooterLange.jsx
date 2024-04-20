@@ -85,16 +85,16 @@ const FooterLange = () => {
             />
           </Link>
         </div>
-        <p className="mt-4 text-black font-rubik">
+        <p className="mt-4  font-roboto">
           <strong>Jörg Lange GmbH & Co. KG</strong> <br />
           Vor dem Riepenberg 10 <br />
           37696 Marienmünster <br />
         </p>
-        <p className="mt-3 text-black font-rubik">
+        <p className="mt-3  font-roboto">
           Tel. 05284 - 94420 <br />
           Fax 05284 - 94421
         </p>
-        <p className="mt-2 text-black font-rubik">
+        <p className="mt-2  font-roboto">
           <Link href={"mailto:info@lange-malermeister.de"}>
             info@lange-malermeister.de
           </Link>
@@ -106,7 +106,7 @@ const FooterLange = () => {
 
       {/* /.footer-list */}
       <div className="col-lg-3 col-md-4 footer-list">
-        <h5 className="footer-title font-slab">Links</h5>
+        <h5 className="footer-title font-roboto font-bold">Links</h5>
         <ul>
           {linksFooterContent.map((list, i) => (
             <li key={i}>
@@ -118,7 +118,7 @@ const FooterLange = () => {
       {/* /.footer-list */}
 
       <div className="col-xl-2 col-lg-3 col-md-4 footer-list">
-        <h5 className="footer-title font-slab">Rechtliches</h5>
+        <h5 className="footer-title font-roboto font-bold">Rechtliches</h5>
         <ul className="pe-5">
           {legalFooterContent.map((list, i) => (
             <li key={i}>
