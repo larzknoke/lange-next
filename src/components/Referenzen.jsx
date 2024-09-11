@@ -22,6 +22,22 @@ export default function Referenzen() {
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const TestimonilContent = [

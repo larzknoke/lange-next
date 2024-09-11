@@ -122,7 +122,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="text-wrapper pr-4 text-light">
+              <div className="text-wrapper pr-4 text-light px-4 px-md-0">
                 <p className="text-light mb-4">
                   Bewährt oder außergewöhnlich, gemütlich oder exklusiv, wir
                   planen und gestalten Ihre Wohnräume ganz nach Ihren Wünschen.
@@ -171,7 +171,7 @@ export default function Home() {
 		============================================== */}
       <div className="fancy-text-block-six overflow-hidden mt-250 md-mt-200">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center px-4 px-md-0">
             <div
               className="col-lg-6"
               data-aos="fade-right"
@@ -399,7 +399,7 @@ export default function Home() {
           className="shapes shape_6"
         /> */}
       </div>
-      <div className="faq-section-four">
+      <div className="faq-section-four geschichte">
         <Image
           width={182}
           height={397}
@@ -434,12 +434,12 @@ export default function Home() {
               height={330}
               src="/images/lange/webp/team.webp"
               alt="Team"
-              className="m-auto my-5 rounded"
+              className="m-auto my-5 rounded h-100"
             />
           </div>
 
           <div className="row">
-            <div className="col-xl-9 col-lg-10 m-auto text-start">
+            <div className="col-xl-9 col-lg-10 m-auto text-start px-4">
               <p className="mb-3">
                 Seit mehr als 100 Jahren helfen wir Ihnen und Ihrer Immobilie
                 dabei, der Witterung zu trotzen. Ob Fachwerk oder Ziegel, ob
@@ -464,7 +464,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-duration="1200"
           >
-            <h3 className="font-rubik pb-30">
+            <h3 className="font-rubik pb-30 ">
               Haben Sie Fragen? Kontaktieren Sie uns gern.
             </h3>
             <Link className="theme-btn-five" href="#kontakt">

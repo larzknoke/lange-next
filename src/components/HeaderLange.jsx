@@ -7,6 +7,7 @@ import Image from "next/image";
 
 const HeaderLange = () => {
   const [navbar, setNavbar] = useState(false);
+  const [mobileNavbar, setMobileNavbar] = useState(false);
 
   const changeBackground = () => {
     if (typeof window !== "undefined") {
@@ -34,8 +35,8 @@ const HeaderLange = () => {
             : "theme-main-menu sticky-menu theme-menu-four bg-none"
         }
       >
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="logo">
+        <div className="d-flex align-items-center justify-content-between pe-4">
+          <div className="logo w-25">
             <Link href="/">
               <Image
                 width="480"
@@ -46,8 +47,8 @@ const HeaderLange = () => {
             </Link>
           </div>
           {/* End Logo */}
-          <div className="d-flex flex-column align-items-end gap-2">
-            <div className="header-kontakt d-flex gap-4">
+          <div className="d-flex  flex-lg-column flex-column-reverse  align-items-end  gap-3">
+            <div className="header-kontakt d-flex flex-column flex-md-row gap-0 gap-md-4 align-items-end">
               <div className="d-flex gap-2">
                 <img
                   width={23}
@@ -69,7 +70,84 @@ const HeaderLange = () => {
                 </span>
               </div>
             </div>
-            <nav id="mega-menu-holder" className="navbar navbar-expand-lg">
+            <div className="burger d-lg-none d-flex font-slab gap-2 ">
+              <img
+                width={50}
+                src="/images/lange/menu/menu_eimer.svg"
+                alt="Menü Eimer"
+                onClick={() => setMobileNavbar(!mobileNavbar)}
+              />
+            </div>
+            <div className={`mobile-nav ${mobileNavbar ? " open" : ""}`}>
+              <div className="mobile-nav-wrapper">
+                <Link href="/">
+                  <Image
+                    className="logo-mobile"
+                    width="400"
+                    height="150"
+                    src="/images/lange/lange_logo.svg"
+                    alt="brand"
+                  />
+                </Link>
+                <ul className="font-slab">
+                  <li>
+                    <a className="nav-link" href="/">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    Leistungen
+                    <ul className="mobile-sub-nav">
+                      <li>Anstrichsystem</li>
+                      <li>Dämmtechnik</li>
+                      <li>Innenraumgestaltung</li>
+                    </ul>
+                  </li>
+                  <li>
+                    {" "}
+                    <a
+                      href="#laden"
+                      data-to-scrollspy-id="laden"
+                      onClick={() => setMobileNavbar(!mobileNavbar)}
+                      // data-toggle="dropdown"
+                    >
+                      Fachgeschäft
+                    </a>
+                  </li>
+                  <li>
+                    {" "}
+                    <a
+                      href="#team"
+                      data-to-scrollspy-id="team"
+                      onClick={() => setMobileNavbar(!mobileNavbar)}
+                    >
+                      Team
+                    </a>
+                  </li>
+                  <li>
+                    {" "}
+                    <a
+                      href="#referenzen"
+                      data-to-scrollspy-id="referenzen"
+                      onClick={() => setMobileNavbar(!mobileNavbar)}
+                    >
+                      Referenzen
+                    </a>
+                  </li>
+                </ul>
+                <Link
+                  href="#kontakt"
+                  className="theme-btn-five"
+                  onClick={() => setMobileNavbar(!mobileNavbar)}
+                >
+                  Kontakt
+                </Link>
+              </div>
+            </div>
+            <nav
+              id="mega-menu-holder"
+              className="navbar navbar-expand-lg d-none d-lg-block"
+            >
               <div className="container nav-container">
                 <div
                   className="navbar-collapse collapse"
@@ -100,7 +178,7 @@ const HeaderLange = () => {
           {/* End nav */}
         </div>
 
-        <MegaMenuMobile />
+        {/* <MegaMenuMobile /> */}
 
         {/* 	End Mega Menu for Mobile */}
       </div>

@@ -26,13 +26,12 @@ const Fachgeschaeft = () => {
           data-aos="fade-right"
           data-aos-duration="1200"
           data-aos-delay="200"
-          data-aos-delay="200"
         />
       </div>
       {/* End .col */}
 
       <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
-        <div className="text-wrapper">
+        <div className="text-wrapper px-4 px-md-0">
           <div className="client-info font-rubik">
             Über <span>1000+ Produkte</span>
           </div>

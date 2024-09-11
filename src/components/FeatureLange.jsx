@@ -25,7 +25,7 @@ const FeatureContent = [
 
 const FeatureLange = ({ toggleAnstrich, toggleDamm }) => {
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center gap-4 gap-md-0">
       {/* <div className="d-flex gap-4 flex-column ">
         <p>
           Seit mehr als 100 Jahren helfen wir Ihnen und Ihrer Immobilie dabei,

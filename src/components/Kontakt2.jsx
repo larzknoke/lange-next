@@ -12,7 +12,7 @@ const Kontakt2 = () => {
         </h2>
       </div>
       <div className="row">
-        <div className="col-xl-5  m-auto">
+        <div className="col-xl-5  m-auto px-5 px-md-0">
           <p className="font-rubik sub-heading text-start pb-4 ">
             Sie benötigen Hilfe oder Beratung? <br />
             Wir helfen Ihnen gern.
@@ -34,7 +34,9 @@ const Kontakt2 = () => {
             Fax 05284 - 94421
           </p>
           <p className="mt-2 mb-4 fs-5 font-roboto">
-            info@lange-malermeister.de
+            <a href="mailto:info@lange-malermeister.de">
+              info@lange-malermeister.de
+            </a>{" "}
           </p>
           {/* <p className="mt-4 fs-5 font-slab">
             <strong>Öffnungszeiten</strong> <br />

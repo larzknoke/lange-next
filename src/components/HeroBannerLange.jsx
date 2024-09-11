@@ -35,7 +35,7 @@ const HeroBannerLange = ({ toggleAnstrich, toggleDamm }) => {
 
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 order-lg-last">
+          <div className="col-lg-6 order-lg-last d-none d-lg-block">
             <div className="header-holder">
               <Image
                 src="/images/lange/webp/haus.webp"
@@ -71,8 +71,8 @@ const HeroBannerLange = ({ toggleAnstrich, toggleDamm }) => {
           </div>
           {/* End .col */}
 
-          <div className="col-lg-6 order-lg-first">
-            <div className="text-wrapper">
+          <div className="col-lg-6 order-lg-first  px-5 px-md-0">
+            <div className="text-wrapper ">
               <h1 data-aos="fade-up" data-aos-duration="1200">
                 <span>beraten</span>
               </h1>

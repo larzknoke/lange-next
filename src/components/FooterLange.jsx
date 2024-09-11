@@ -73,7 +73,7 @@ const productsFooterContent = [
 
 const FooterLange = () => {
   return (
-    <div className="row justify-content-end">
+    <div className="row justify-content-end px-4 px-md-0">
       <div className="col-xl-4 col-lg-3 col-12 footer-about-widget">
         <div className="logo">
           <Link href="/">
