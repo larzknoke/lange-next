@@ -36,6 +36,28 @@ const HeaderLange = () => {
         }
       >
         <div className="d-flex align-items-center justify-content-between pe-4">
+          <div className="header-kontakt-top">
+            <div className="d-flex gap-2">
+              <img
+                width={23}
+                src="/images/lange/icons/eimer.svg"
+                alt="Phone Icon"
+              />
+              <span>05284 - 94420</span>
+            </div>
+            <div className="d-flex gap-2">
+              <img
+                width={25}
+                src="/images/lange/icons/pinsel3.svg"
+                alt="Email Icon"
+              />
+              <span>
+                <a href="mailto:info@lange-malermeister.de">
+                  info@lange-malermeister.de
+                </a>
+              </span>
+            </div>
+          </div>
           <div className="logo w-25">
             <Link href="/">
               <Image

@@ -12,7 +12,6 @@ function Scroller() {
             document.documentElement.clientHeight)) *
         100;
 
-      console.log(scrollPosition);
       setPanPosition(scrollPosition);
       setIsScrolling(true);
       // setTimeout(() => {

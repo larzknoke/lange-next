@@ -716,7 +716,7 @@ body .theme-btn-five:before {
 @media (max-width: 500px) {
   .burger {
     position: absolute;
-    top: 0;
+    top: 25px;
     margin-top: 0;
   }
   .theme-menu-four .logo {
@@ -765,5 +765,33 @@ body .theme-btn-five:before {
   }
   .theme-footer-four .logo {
     transform: translateX(-80px);
+  }
+}
+
+.header-kontakt-top {
+  display: none !important;
+}
+
+@media (max-width: 500px) {
+  .header-kontakt-top {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    padding: 5px 15px;
+    font-size: 14px;
+    gap: 14px;
+    color: var(--text-dark);
+    z-index: 99999;
+    background-color: var(--lange-orange-light2);
+    width: 100%;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.05);
+
+    img {
+      width: 20px;
+    }
   }
 }
