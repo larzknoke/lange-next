@@ -158,11 +158,6 @@ const HeaderLange = () => {
                     {/* End MegaMenu */}
 
                     <ul className="right-button-group d-flex align-items-center justify-content-center">
-                      {/* <li>
-                      <Link href="/login" className="signIn-action">
-                        Login
-                      </Link>
-                    </li> */}
                       <li>
                         <Link href="#kontakt" className="theme-btn-five">
                           Kontakt
