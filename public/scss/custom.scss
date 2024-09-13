@@ -774,6 +774,7 @@ body .theme-btn-five:before {
 
 @media (max-width: 500px) {
   .header-kontakt-top {
+    transition: all 0.3s ease-in-out;
     display: flex !important;
     align-items: center;
     justify-content: space-around;
@@ -793,5 +794,8 @@ body .theme-btn-five:before {
     img {
       width: 20px;
     }
+  }
+  .fixed .header-kontakt-top {
+    transform: translateY(-100%);
   }
 }
