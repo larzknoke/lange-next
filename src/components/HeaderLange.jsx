@@ -118,11 +118,45 @@ const HeaderLange = () => {
                     </a>
                   </li>
                   <li>
-                    Leistungen
+                    <a
+                      href="#leistungen"
+                      data-to-scrollspy-id="leistungen"
+                      onClick={() => setMobileNavbar(!mobileNavbar)}
+                      // data-toggle="dropdown"
+                    >
+                      Leistungen
+                    </a>
                     <ul className="mobile-sub-nav">
-                      <li>Anstrichsystem</li>
-                      <li>Dämmtechnik</li>
-                      <li>Innenraumgestaltung</li>
+                      <li>
+                        <a
+                          href="#anstrichsysteme"
+                          data-to-scrollspy-id="anstrichsysteme"
+                          onClick={() => setMobileNavbar(!mobileNavbar)}
+                          // data-toggle="dropdown"
+                        >
+                          Anstrichsystem
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#daemmtechnik"
+                          data-to-scrollspy-id="daemmtechnik"
+                          onClick={() => setMobileNavbar(!mobileNavbar)}
+                          // data-toggle="dropdown"
+                        >
+                          Dämmtechnik
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#gestaltung"
+                          data-to-scrollspy-id="gestaltung"
+                          onClick={() => setMobileNavbar(!mobileNavbar)}
+                          // data-toggle="dropdown"
+                        >
+                          Innenraumgestaltung
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>

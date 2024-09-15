@@ -7,6 +7,7 @@ const FeatureContent = [
     subTitle: `Schönheit und effektiver Schutz – das richtige Anstrichsystem sorgt für den Erhalt von Bausubstanz.`,
     picture: "haus1",
     modal: "toggleAnstrich",
+    link: "anstrichsysteme",
   },
   {
     icon: "waerme",
@@ -14,37 +15,20 @@ const FeatureContent = [
     subTitle: `Eine professionell gedämmte Fassade ist die Basis zur Senkung Ihrer Energiekosten.`,
     picture: "mann_hoch4",
     modal: "toggleDamm",
+    link: "daemmtechnik",
   },
   {
     icon: "gestaltung",
     meta: "farbliche Gestaltung",
     subTitle: `Natürlich übernehmen wir auch gerne die harmonische farbliche Gestaltung Ihrer Innenräume. `,
     picture: "fassade3",
+    link: "gestaltung",
   },
 ];
 
 const FeatureLange = ({ toggleAnstrich, toggleDamm }) => {
   return (
     <div className="row justify-content-center gap-4 gap-md-0">
-      {/* <div className="d-flex gap-4 flex-column ">
-        <p>
-          Seit mehr als 100 Jahren helfen wir Ihnen und Ihrer Immobilie dabei,
-          der Witterung zu trotzen. Ob Fachwerk oder Ziegel, ob Erstanstrich
-          oder Renovierung: Wir sind die Spezialisten für ästhetische
-          Fassadengestaltung und effektiven Langzeitschutz.
-        </p>
-        <p>
-          Darüber hinaus sorgen modernste Wärmedämmtechniken für geringe
-          Heizkosten. Wir bieten Ihnen von der Wärmeschutzberechnung bis zum
-          fachgerechten Anbringen des Wärmeverbundsystems auf nahezu allen
-          Untergründen die komplette Lösung.
-        </p>
-        <p>
-          Natürlich übernehmen wir auch gerne die harmonische farbliche
-          Gestaltung Ihrer Innenräume. Wir kümmern uns darum, dass aus Ihren
-          vier Wänden ein behagliches Zuhause wird.
-        </p>
-      </div> */}
       {FeatureContent.map((val, i) => (
         <div
           className="col-lg-4 col-md-6"
@@ -52,6 +36,7 @@ const FeatureLange = ({ toggleAnstrich, toggleDamm }) => {
           data-aos="fade-up"
           data-aos-duration="1200"
           onClick={eval(val.modal)}
+          id={val.link}
         >
           <div className="block-style-five">
             <div className="icon">
