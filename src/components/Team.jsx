@@ -136,7 +136,7 @@ const Team = () => {
                 </li>
               ))}
             </ul>
-            <a href="#" className="subscribe-btn font-rubik">
+            <a href="#kontakt" className="subscribe-btn font-rubik">
               Kontakt
             </a>
           </div>
