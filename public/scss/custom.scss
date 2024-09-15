@@ -350,7 +350,7 @@ body .theme-btn-five:before {
 
 .fancy-short-banner-five form {
   height: auto;
-  margin: 50px 25px;
+  margin: 80px 25px 20px;
 }
 
 .fancy-short-banner-five input,
@@ -797,5 +797,44 @@ body .theme-btn-five:before {
   }
   .fixed .header-kontakt-top {
     transform: translateY(-100%);
+  }
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.impressum {
+  padding: 300px 0;
+
+  h2,
+  h3,
+  h4,
+  p {
+    margin-bottom: 20px;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-weight: 500;
+  }
+}
+
+.confirmer {
+  position: relative;
+  .confirm-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5daa6cc;
+    padding: 50px;
+    border-radius: 5px;
+
+    button {
+      margin: auto;
+    }
   }
 }

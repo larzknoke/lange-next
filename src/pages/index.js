@@ -4,12 +4,10 @@ import Link from "next/link";
 import HeaderLange from "@/components/HeaderLange";
 import HeroBannerLange from "@/components/HeroBannerLange";
 import Fachgeschaeft from "@/components/Fachgeschaeft";
-import FeatureLange2 from "@/components/FeatureLange2";
 import Team from "@/components/Team";
 import Referenzen from "@/components/Referenzen";
 import FooterLange from "@/components/FooterLange";
 import Kontakt from "@/components/Kontakt";
-import Kontakt2 from "@/components/Kontakt2";
 import Image from "next/image";
 import Scroller from "@/components/Scroller";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -356,48 +354,6 @@ export default function Home() {
           </div>
         </div>
         {/* /.container */}
-        {/* <Image
-          width={82}
-          height={82}
-          src="/images/media/img_59.png"
-          alt="media"
-          className="shapes shape_1"
-        />
-        <Image
-          width={46}
-          height={46}
-          src="/images/media/img_60.png"
-          alt="media"
-          className="shapes shape_2"
-        />
-        <Image
-          width={87}
-          height={87}
-          src="/images/media/img_61.png"
-          alt="media"
-          className="shapes shape_3"
-        />
-        <Image
-          width={46}
-          height={46}
-          src="/images/media/img_62.png"
-          alt="media"
-          className="shapes shape_4"
-        />
-        <Image
-          width={111}
-          height={111}
-          src="/images/media/img_63.png"
-          alt="media"
-          className="shapes shape_5"
-        />
-        <Image
-          width={57}
-          height={57}
-          src="/images/media/img_64.png"
-          alt="media"
-          className="shapes shape_6"
-        /> */}
       </div>
       <div className="faq-section-four geschichte">
         <Image
@@ -480,7 +436,7 @@ export default function Home() {
 		============================================== */}
       <div className="fancy-short-banner-five pt-150 pb-150 md-pt-100 md-pb-100 ">
         <div className="container">
-          <Kontakt2 />
+          <Kontakt />
         </div>
       </div>
 

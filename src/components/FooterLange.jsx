@@ -36,11 +36,11 @@ const linksFooterContent = [
 const legalFooterContent = [
   {
     itemName: "Datenschutzerklärung",
-    routePath: "#datenschutzerklärung",
+    routePath: "/datenschutz",
   },
   {
     itemName: "Impressum",
-    routePath: "#impressum",
+    routePath: "/impressum",
   },
 ];
 

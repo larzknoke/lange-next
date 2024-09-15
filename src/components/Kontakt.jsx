@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import FormEvent from "./form/FormEvent";
 import Link from "next/link";
 import Image from "next/image";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 const Kontakt = () => {
+  const [captchaConfirm, setCaptchaConfirm] = useState(false);
+
   return (
     <>
       <div className="title-style-five text-center" id="kontakt">
-        <h2>
+        <h2 className="font-roboto font-bold">
           <span>Kontakt</span>
         </h2>
       </div>
       <div className="row">
-        <div className="col-xl-5  m-auto">
+        <div className="col-xl-5  m-auto px-5 px-md-0">
           <p className="font-rubik sub-heading text-start pb-4 ">
             Sie benötigen Hilfe oder Beratung? <br />
             Wir helfen Ihnen gern.
@@ -24,33 +27,44 @@ const Kontakt = () => {
             alt="shape"
             className="line"
           />
-          <p className="mt-4 fs-5 font-slab">
+          <p className="mt-4 fs-5 font-roboto">
             <strong>Jörg Lange GmbH & Co. KG</strong> <br />
             Vor dem Riepenberg 10 <br />
             37696 Marienmünster <br />
           </p>
-          <p className="mt-3 fs-5 font-slab">
+          <p className="mt-3 fs-5 font-roboto">
             Tel. 05284 - 94420 <br />
             Fax 05284 - 94421
           </p>
-          <p className="mt-2 mb-4 fs-5 font-slab">info@lange-malermeister.de</p>
-          {/* <p className="mt-4 fs-5 font-slab">
-            <strong>Öffnungszeiten</strong> <br />
-            Montag - Freitag: 9:00 - 18:00 <br />
-            Samstag: 9:00 - 12:30
-          </p> */}
-        </div>
-        <div className="col-xl-7  m-auto">
-          <FormEvent />
-        </div>
-      </div>
-      {/* <div className="row">
-        <div className="col-xl-7 col-lg-8 col-md-10 m-auto">
-          <p className="info-text">
-            Already a member? <Link href="login">Sign in.</Link>
+          <p className="mt-2 mb-4 fs-5 font-roboto">
+            <a href="mailto:info@lange-malermeister.de">
+              info@lange-malermeister.de
+            </a>{" "}
           </p>
         </div>
-      </div> */}
+        <div className="col-xl-7  m-auto">
+          {captchaConfirm ? (
+            <GoogleReCaptchaProvider
+              reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+            >
+              <FormEvent />
+            </GoogleReCaptchaProvider>
+          ) : (
+            <div className="confirmer">
+              {" "}
+              <FormEvent />
+              <div className="confirm-wrapper">
+                <button
+                  className="theme-btn-five"
+                  onClick={() => setCaptchaConfirm(true)}
+                >
+                  Google ReCaptcha akzeptieren und Formular öffnen
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     </>
   );
 };
