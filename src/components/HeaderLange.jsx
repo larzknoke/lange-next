@@ -38,6 +38,20 @@ const HeaderLange = () => {
         <div className="d-flex align-items-center justify-content-between pe-4">
           <div className="header-kontakt-top">
             <div className="d-flex gap-2">
+              <Link
+                href={"https://www.instagram.com/malerbetrieb_lange"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-flex gap-2"
+              >
+                <img
+                  width={23}
+                  src="/images/lange/icons/insta_light_mobile.svg"
+                  alt="Instagram Icon"
+                />
+              </Link>
+            </div>
+            <div className="d-flex gap-2">
               <img
                 width={23}
                 src="/images/lange/icons/eimer.svg"
@@ -70,26 +84,42 @@ const HeaderLange = () => {
           </div>
           {/* End Logo */}
           <div className="d-flex  flex-lg-column flex-column-reverse  align-items-end  gap-3">
-            <div className="header-kontakt d-flex flex-column flex-md-row gap-0 gap-md-4 align-items-end">
-              <div className="d-flex gap-2">
-                <img
-                  width={23}
-                  src="/images/lange/icons/eimer.svg"
-                  alt="Phone Icon"
-                />
-                <span>05284 - 94420</span>
-              </div>
-              <div className="d-flex gap-2">
-                <img
-                  width={25}
-                  src="/images/lange/icons/pinsel3.svg"
-                  alt="Email Icon"
-                />
-                <span>
-                  <a href="mailto:info@lange-malermeister.de">
-                    info@lange-malermeister.de
-                  </a>
-                </span>
+            <div className="d-flex flex-row space-between w-100 justify-content-between">
+              <div className="ps-4 header-kontakt"></div>
+              <div className="header-kontakt d-flex flex-column flex-md-row gap-0 gap-md-4 align-items-end">
+                <Link
+                  href={"https://www.instagram.com/malerbetrieb_lange"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="d-flex gap-2"
+                >
+                  <img
+                    width={23}
+                    src="/images/lange/icons/insta_light.svg"
+                    alt="Instagram Icon"
+                  />
+                  <span>Folgt uns auf Instagram!</span>
+                </Link>
+                <div className="d-flex gap-2">
+                  <img
+                    width={23}
+                    src="/images/lange/icons/eimer.svg"
+                    alt="Phone Icon"
+                  />
+                  <span>05284 - 94420</span>
+                </div>
+                <div className="d-flex gap-2">
+                  <img
+                    width={25}
+                    src="/images/lange/icons/pinsel3.svg"
+                    alt="Email Icon"
+                  />
+                  <span>
+                    <a href="mailto:info@lange-malermeister.de">
+                      info@lange-malermeister.de
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
             <div className="burger d-lg-none d-flex font-slab gap-2 ">
