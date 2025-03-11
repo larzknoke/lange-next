@@ -48,7 +48,7 @@ const Fachgeschaeft = () => {
             Besuchen Sie uns und werfen Sie einen Blick in unsere
             Ausstellungsräume.
           </p>
-          <div className="name font-slab">Wir freuen uns auf Sie!</div>
+          <div className="name font-rubik">Wir freuen uns auf Sie!</div>
         </div>
         {/* /.text-wrapper */}
       </div>

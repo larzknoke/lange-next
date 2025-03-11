@@ -183,7 +183,7 @@ export default function Home() {
               </div>
               {/* End title */}
               <p className="meta">
-                <strong>Du sieht im Handwerk deine Berufung?</strong>
+                <strong>Du siehst im Handwerk deine Berufung?</strong>
               </p>
               <p className="meta">
                 Du bist motiviert, kreativ, zuverlässig, ehrgeizig, teamfähig
